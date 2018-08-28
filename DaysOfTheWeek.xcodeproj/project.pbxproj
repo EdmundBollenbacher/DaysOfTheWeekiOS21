@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		CA9D18352135AAFB004BDD90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9D18342135AAFB004BDD90 /* AppDelegate.swift */; };
-		CA9D18372135AAFB004BDD90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9D18362135AAFB004BDD90 /* ViewController.swift */; };
 		CA9D183A2135AAFB004BDD90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA9D18382135AAFB004BDD90 /* Main.storyboard */; };
 		CA9D183C2135AAFD004BDD90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA9D183B2135AAFD004BDD90 /* Assets.xcassets */; };
 		CA9D183F2135AAFD004BDD90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA9D183D2135AAFD004BDD90 /* LaunchScreen.storyboard */; };
+		CA9D18472135B258004BDD90 /* DaysOfTheWeekTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9D18462135B258004BDD90 /* DaysOfTheWeekTableViewController.swift */; };
+		CA9D18492135B2B7004BDD90 /* DayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9D18482135B2B7004BDD90 /* DayViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CA9D18312135AAFB004BDD90 /* DaysOfTheWeek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DaysOfTheWeek.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA9D18342135AAFB004BDD90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CA9D18362135AAFB004BDD90 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CA9D18392135AAFB004BDD90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CA9D183B2135AAFD004BDD90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA9D183E2135AAFD004BDD90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA9D18402135AAFD004BDD90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA9D18462135B258004BDD90 /* DaysOfTheWeekTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysOfTheWeekTableViewController.swift; sourceTree = "<group>"; };
+		CA9D18482135B2B7004BDD90 /* DayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +57,9 @@
 			isa = PBXGroup;
 			children = (
 				CA9D18342135AAFB004BDD90 /* AppDelegate.swift */,
-				CA9D18362135AAFB004BDD90 /* ViewController.swift */,
 				CA9D18382135AAFB004BDD90 /* Main.storyboard */,
+				CA9D18462135B258004BDD90 /* DaysOfTheWeekTableViewController.swift */,
+				CA9D18482135B2B7004BDD90 /* DayViewController.swift */,
 				CA9D183B2135AAFD004BDD90 /* Assets.xcassets */,
 				CA9D183D2135AAFD004BDD90 /* LaunchScreen.storyboard */,
 				CA9D18402135AAFD004BDD90 /* Info.plist */,
@@ -135,8 +138,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA9D18372135AAFB004BDD90 /* ViewController.swift in Sources */,
 				CA9D18352135AAFB004BDD90 /* AppDelegate.swift in Sources */,
+				CA9D18472135B258004BDD90 /* DaysOfTheWeekTableViewController.swift in Sources */,
+				CA9D18492135B2B7004BDD90 /* DayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
