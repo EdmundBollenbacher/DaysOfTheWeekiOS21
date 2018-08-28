@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="Puw-Wr-y3f" style="IBUITableViewCellStyleDefault" id="gpy-Ji-1eF">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DayCell" textLabel="Puw-Wr-y3f" style="IBUITableViewCellStyleDefault" id="gpy-Ji-1eF">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gpy-Ji-1eF" id="nWO-xx-WD8">
@@ -36,7 +36,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="EEI-8D-tWK" kind="show" id="6vM-c3-MMl"/>
+                                    <segue destination="EEI-8D-tWK" kind="show" identifier="ToDatDetailVire" id="6vM-c3-MMl"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -60,9 +60,24 @@
                     <view key="view" contentMode="scaleToFill" id="bel-yt-Jjb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YIg-2T-SNO">
+                                <rect key="frame" x="166" y="323" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YIg-2T-SNO" firstAttribute="centerX" secondItem="bel-yt-Jjb" secondAttribute="centerX" id="lXG-6f-kdp"/>
+                            <constraint firstItem="YIg-2T-SNO" firstAttribute="centerY" secondItem="bel-yt-Jjb" secondAttribute="centerY" id="u3f-ce-CYe"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="IFZ-cg-kbV"/>
                     </view>
+                    <connections>
+                        <outlet property="dayLabel" destination="YIg-2T-SNO" id="oSz-bc-qXu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fs1-dK-TYS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
